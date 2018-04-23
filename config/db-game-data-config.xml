@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//ibatis.apache.org//DTD Config 3.0//EN"
+  "http://ibatis.apache.org/dtd/ibatis-3-config.dtd">
+<configuration>
+    <settings>
+	<setting name="defaultStatementTimeout" value="60"/>
+    </settings>
+
+    <environments default="development">
+	<environment id="development">
+	    <transactionManager type="JDBC"/>
+	    <dataSource type="POOLED">
+		<property name="driver" value="com.mysql.jdbc.Driver"/>
+		
+		<property name="url" value="jdbc:mysql://192.168.1.200:8760/game_template_data?autoReconnect=true"/>
+		<property name="username" value="root"/>
+		<property name="password" value="123"/>
+		
+		<!--
+		<property name="url" value="jdbc:mysql://192.168.1.36:3008/kapai_game_data?autoReconnect=true"/>
+		<property name="username" value="root"/>
+		<property name="password" value="123456"/>
+		<property name="poolPingQuery" value="select 1"/>
+		<property name="poolPingEnabled" value="true"/>
+		<property name="poolPingConnectionsNotUsedFor" value="3600000"/>
+		-->
+	    </dataSource>
+	</environment>
+    </environments>
+    <mappers>
+
+    </mappers>
+</configuration>

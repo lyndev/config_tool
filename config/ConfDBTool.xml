@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<configure>
+    <excel path="E:\svn_local\project\clientcode\config\base" />
+    <java path="E:\svn_local\project_cn_chess\code\common\configData\export_java" />
+    <lua path="E:\svn_local\project_cn_chess\code\common\configData\export_lua" />
+    <js path="E:\svn_local\project_cn_chess\code\common\configData\export_js" />
+    <csharp path="E:\svn_local\project_cn_chess\code\common\configData\export_csharp" />
+    <mysql url="127.0.0.1" user="root" passwd="87608760"/>
+    <lookandfeel name="com.sun.java.swing.plaf.windows.WindowsLookAndFeel"/>
+</configure>
